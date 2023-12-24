@@ -65,7 +65,7 @@ RUN apt-get --no-install-recommends --no-install-suggests --yes --quiet install 
 
 # 安装Yaf扩展
 RUN pecl install yaf \
-    && echo "extension=yaf.so" >> /etc/php/8.1/cli/php.ini
+    && echo "extension=yaf.so" >> /etc/php/8.1/fpm/php.ini
 
 # 安装php-fpm
 RUN apt-get install -y php8.1-fpm
